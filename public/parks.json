@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "fullName": "Big Bend Ranch State Park",
+      "bortleScale": "1",
+      "img": "http://www.cleardarksky.com/c/BgBndRSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/BgBndRSPTXkey.html",
+      "address": "1900 Sauceda Ranch Road Presidio, TX 79845",
+      "location": {
+        "lat": 29.5304638,
+        "lng": -104.1543658
+      },
+      "id": 1,
+      "name": "Big",
+      "isIDSP": "True"
+    },
+    {
+      "fullName": "Davis Mountains State Park",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/DvsMtSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/DvsMtSPTXkey.html",
+      "address": "P.O. Box 1707 Fort Davis, TX 79734",
+      "location": {
+        "lat": 30.595988,
+        "lng": -103.930182
+      },
+      "id": 2,
+      "name": "Davis",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Kickapoo Cavern State Park",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/KckpCvrnSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/KckpCvrnSPTXkey.html",
+      "location": {
+        "lat": 29.6118919,
+        "lng": -100.4484157
+      },
+      "id": 3,
+      "name": "Kickapoo",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Balmorhea State Park",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/BlmrhSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/BlmrhSPTXkey.html",
+      "address": "P.O. Box 15 Toyahvale, TX 79786",
+      "location": {
+        "lat": 30.944313,
+        "lng": -103.7832376
+      },
+      "id": 4,
+      "name": "Balmorhea",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Seminole Canyon State park",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/SmnlCSPHSTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/SmnlCSPHSTXkey.html",
+      "address": "P.O. Box 820 Comstock, TX 78837",
+      "location": {
+        "lat": 29.6832667,
+        "lng": -101.318441
+      },
+      "id": 5,
+      "name": "Seminole",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Copper Breaks State Park",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/CopBrkTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/CopBrkTXkey.html",
+      "address": "777 Park Road 62 Quanah, TX 79252-7679",
+      "location": {
+        "lat": 34.1114701,
+        "lng": -99.7525945
+      },
+      "id": 6,
+      "name": "Copper",
+      "isIDSP": "True"
+    },
+    {
+      "fullName": "Caprock Canyon",
+      "bortleScale": "2",
+      "img": "http://www.cleardarksky.com/c/CprckCTTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/CprckCTTXkey.html",
+      "address": "P.O. Box 204 Quitaque, TX 79255",
+      "location": {
+        "lat": 34.443675,
+        "lng": -101.0520928
+      },
+      "id": 7,
+      "name": "Caprock",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Enchanted Rock",
+      "bortleScale": "3",
+      "img": "http://www.cleardarksky.com/c/EnchaPkTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/EnchaPkTXkey.html",
+      "address": "16710 Ranch Rd. 965 Fredericksburg, TX 78624",
+      "location": {
+        "lat": 30.5132452,
+        "lng": -98.8200417
+      },
+      "id": 8,
+      "name": "Enchanted",
+      "isIDSP": "True"
+    },
+    {
+      "fullName": "Colorado Bend State Park",
+      "bortleScale": "3",
+      "img": "http://www.cleardarksky.com/c/ClrdBndSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/ClrdBndSPTXkey.html",
+      "address": "P. O. Box 118 Bend, TX 76824",
+      "location": {
+        "lat": 31.0396154,
+        "lng": -98.4839243
+      },
+      "id": 9,
+      "name": "Colorado",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "South Llano River State Park",
+      "bortleScale": "3",
+      "img": "http://www.cleardarksky.com/c/SLlnRSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/SLlnRSPTXkey.html",
+      "address": "1927 Park Road 73 Junction, TX 76849",
+      "location": {
+        "lat": 30.4463011,
+        "lng": -99.8006227
+      },
+      "id": 10,
+      "name": "Llano",
+      "isIDSP": "True"
+    },
+    {
+      "fullName": "Lost Maples",
+      "bortleScale": "3",
+      "img": "http://www.cleardarksky.com/c/LstMplsSNATXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/LstMplsSNATXkey.html",
+      "address": "37221 F.M. 187 Vanderpool, TX 78885",
+      "location": {
+        "lat": 29.8197222,
+        "lng": -99.5830556
+      },
+      "id": 11,
+      "name": "Maple",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Monahans Sandhills State Park",
+      "bortleScale": "4",
+      "img": "http://www.cleardarksky.com/c/MhnsSndhllsSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/MhnsSndhllsSPTXkey.html",
+      "address": "P.O. Box 1738 Monahans, TX 79756",
+      "location": {
+        "lat": 31.6194,
+        "lng": -102.8116
+      },
+      "id": 12,
+      "name": "Monahans",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Garner State Park",
+      "bortleScale": "4",
+      "img": "http://www.cleardarksky.com/c/GrnrSPTXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/GrnrSPTXkey.html",
+      "address": "234 RR 1050 Concan, TX 78838",
+      "location": {
+        "lat": 29.5830065,
+        "lng": -99.7395003
+      },
+      "id": 13,
+      "name": "Garner",
+      "isIDSP": "False"
+    },
+    {
+      "fullName": "Hill Country State Natural Area",
+      "bortleScale": "4",
+      "img": "http://www.cleardarksky.com/c/HllCtyNtATXcs0.gif?1",
+      "link": "http://www.cleardarksky.com/c/HllCtyNtATXkey.html",
+      "address": "10600 Bandera Creek Road Bandera, TX 78003",
+      "location": {
+        "lat": 29.6330044,
+        "lng": -99.1919828
+      },
+      "id": 14,
+      "name": "Hill Country",
+      "isIDSP": "False"
+    }
+  ]
+}
