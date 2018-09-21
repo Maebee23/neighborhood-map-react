@@ -6,8 +6,7 @@ import {
   CardBody,
   CardImage,
   CardTitle,
-  CardText,
-  Collapse
+  CardText
 } from 'mdbreact';
 
 class List extends Component {
