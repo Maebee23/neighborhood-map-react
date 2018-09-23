@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Sidebar from './Sidebar';
+import Header from './Header';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,8 +14,10 @@ class App extends Component {
     markersArray: [],
     images: [],
     displayedParks: [],
-    parknames: [],
-    map: {}
+    map: {},
+    isActive: true,
+    selectedValue: '',
+    ariaSelect: true
   };
   componentDidMount() {
     this.getVenues();
@@ -55,16 +58,6 @@ class App extends Component {
         console.log(err);
       });
   };
-  // fetch(
-  //   ' https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=288cccc2c3acff978c00c12650c7882d&gallery_id=72157701441489725&format=json&nojsoncallback=1'
-  // )
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     console.log(data);
-  //     this.setState({ images: data.photos.photo });
-  //   })
-  //   .catch(error => console.log(error));
-  // };
 
   // retrieve parks from local parks.json
   getVenues = () => {
@@ -80,10 +73,15 @@ class App extends Component {
       });
   };
 
+  toggleSideNav = () => {
+    this.setState({ isActive: !this.state.isActive });
+    this.setState({ ariaSelect: !this.state.ariaSelect });
+  };
+
   // filter map markers based on bortle scale ratings
   filterMap = value => {
     console.log(value);
-
+    this.setState({ selectedValue: value });
     this.hideMarkers();
     const filtered = [];
     if (value !== 'All') {
@@ -142,12 +140,14 @@ class App extends Component {
       mapTypeId: 'terrain'
     });
 
-    const infoWindow = new window.google.maps.InfoWindow();
+    const infoWindow = new window.google.maps.InfoWindow({
+      maxWidth: 300
+    });
     const bounds = new window.google.maps.LatLngBounds();
 
     // Create Markers dynamically by mapping over parks
     let markers = this.state.venues.map(venue => {
-      let contentStr = `<div><h2>${venue.fullName}</h2>\
+      let contentStr = `<div ><h2>${venue.fullName}</h2>\
                    <p>${venue.address}</p>\
                     <h6>Clear Sky Chart Cloud Cover and Transparency</h6>
                     <img alt="${venue.fullName} clear sky chart" src=${
@@ -158,14 +158,6 @@ class App extends Component {
                     }> here</a></figcaption>
                    </div>`;
 
-      // if (venue.fullName) {
-      //   contentStr = `${venue.fullName}`;
-      // } else if (venue.name && !venue.address) {
-      //   contentStr = `${venue.name} No address available!`;
-      // } else {
-      //   contentStr = '<h1>No information available</h1>';
-      // }
-
       const marker = new window.google.maps.Marker({
         position: {
           lat: venue.location.lat,
@@ -173,7 +165,7 @@ class App extends Component {
         },
         map: map,
         id: venue.id,
-        title: venue.name,
+        title: venue.fullName,
         icon: tent,
         bortleScale: venue.bortleScale,
         animation: null
@@ -189,7 +181,8 @@ class App extends Component {
 
       map.addListener('click', function() {
         marker.setAnimation(null);
-        map.setZoom(8);
+        map.setZoom(6);
+        infoWindow.close();
       });
 
       bounds.extend(marker.position);
@@ -206,15 +199,25 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <Header
+          isActive={this.state.isActive}
+          toggleSideNav={this.toggleSideNav}
+          ariaSelect={this.state.ariaSelect}
+        />
         <Sidebar
           venues={this.state.venues}
           images={this.state.images}
           displayedParks={this.state.displayedParks}
           CenterControl={this.CenterControl}
           filterMap={this.filterMap}
+          isActive={this.state.isActive}
+          selectedValue={this.state.selectedValue}
+          ariaSelect={this.state.ariaSelect}
         />
 
-        <div id="map">loading map....</div>
+        <div id="map" aria-label="map" aria-role="application" tabindex="0    ">
+          loading map....
+        </div>
       </div>
     );
   }

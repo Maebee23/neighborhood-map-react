@@ -12,7 +12,7 @@ import {
 class List extends Component {
   render() {
     const { id, images, fullName, name, venue } = this.props;
-    const darkSkyPark = 'This is a Cartified International Dark Sky Park.';
+    const darkSkyPark = 'This is a Certified International Dark Sky Park.';
 
     return (
       <div>
@@ -22,7 +22,8 @@ class List extends Component {
             background: 'white',
             marginBottom: '1rem',
             textAlign: 'center',
-            maxHeigh: '400px'
+            maxHeigh: '400px',
+            width: '100%'
           }}
         >
           {images.filter(image => image.title.includes(name)).map(image => {
@@ -38,10 +39,11 @@ class List extends Component {
                   className="img-fluid"
                   alt={venue.fullName}
                   src={path}
-                  // width="100%"
                   height="200px"
+                  width="100%"
+                  tabIndex="0"
                 />
-                <figcaption>
+                <figcaption tabIndex="0">
                   Photo by {artistName}, view on
                   <a href={userProfile}> Flickr</a>
                 </figcaption>
@@ -49,11 +51,14 @@ class List extends Component {
             );
           })}
           <CardBody cascade>
-            <CardTitle style={{ font: 'bold', margin: '1rem' }}>
+            <CardTitle style={{ font: 'bold', margin: '1rem' }} tabindex="0">
               {' '}
               {fullName}
             </CardTitle>
-            <CardText>{venue.isIDSP === 'True' ? darkSkyPark : null}</CardText>
+            <CardText tabindex="0">
+              {venue.isIDSP === 'True' ? <h6>{darkSkyPark}</h6> : null}
+              <p>{venue.address}</p>
+            </CardText>
             <Button
               color="success"
               onClick={() => this.props.CenterControl(id)}

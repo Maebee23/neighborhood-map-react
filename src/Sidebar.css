@@ -1,0 +1,28 @@
+#container {
+  width: 30%;
+  height: 100vh;
+  background: #2ba86a;
+  z-index: 10000;
+  margin: 0;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#description {
+  background: white;
+  padding: 1rem;
+  font-size: 20px;
+}
+@media screen and (max-width: 750px) {
+  #container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1300px) {
+  #container {
+    width: 40%;
+  }
+}

@@ -2,10 +2,10 @@
 
 ## Udacity Neighborhood Map Project
 
-_[About](#about)
-_[Requirements](#requirements)
-_[Dependencies](#dependencies)
-_[Resources](#resources)
+- [About](#about)
+- [Requirements](#requirements)
+- [Dependencies](#dependencies)
+- [Resources](#resources)
 
 ## About
 
