@@ -13,7 +13,7 @@ This is the 7th and final project of Udacity's front-end nanodegree. Students cr
 
 ## Requirements
 
-To view this application you may clone this repository and run npm install, or follow this [link](#link).
+To view this application you may download or clone this repository and run `npm install` and `npm start`.
 
 ## Dependencies
 
