@@ -48,7 +48,7 @@ class Sidebar extends Component {
                 />
               ))}
             </div>
-            <div tabindex="0">
+            <div tabIndex="0">
               Icons made by{' '}
               <a href="http://www.freepik.com" title="Freepik">
                 Freepik

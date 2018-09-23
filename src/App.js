@@ -215,7 +215,7 @@ class App extends Component {
           ariaSelect={this.state.ariaSelect}
         />
 
-        <div id="map" aria-label="map" aria-role="application" tabindex="0    ">
+        <div id="map" aria-label="map" role="application" tabIndex="0    ">
           loading map....
         </div>
       </div>

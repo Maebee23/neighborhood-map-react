@@ -51,13 +51,13 @@ class List extends Component {
             );
           })}
           <CardBody cascade>
-            <CardTitle style={{ font: 'bold', margin: '1rem' }} tabindex="0">
+            <CardTitle style={{ font: 'bold', margin: '1rem' }} tabIndex="0">
               {' '}
               {fullName}
             </CardTitle>
-            <CardText tabindex="0">
-              {venue.isIDSP === 'True' ? <h6>{darkSkyPark}</h6> : null}
-              <p>{venue.address}</p>
+            <CardText style={{ fontSize: '1rem' }} tabIndex="0">
+              {venue.isIDSP === 'True' ? darkSkyPark : null}
+              <span>{venue.address}</span>
             </CardText>
             <Button
               color="success"

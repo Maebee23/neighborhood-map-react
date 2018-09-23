@@ -15,7 +15,7 @@ export default class extends Component {
             aria-label="Toggle navigation"
             onClick={this.props.toggleSideNav}
           >
-            <span class="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
           </button>
         </nav>
       </div>
