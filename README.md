@@ -20,7 +20,7 @@ To view this application you may download or clone this repository and run `npm 
 This app requires the following:
 
 - [bootstrap](#http://getbootstrap.com/)
-- [MDBbootstrap](#https://mdbootstrap.com/)
+- [MDBootstrap](#https://mdbootstrap.com/)
 - [MDBReact](#https://mdbootstrap.com/react/)
 - [Google Maps JS API](#https://developers.google.com/maps/documentation/javascript/tutorial)
 - [flickr API](#https://www.flickr.com/services/api/)
