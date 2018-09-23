@@ -5,12 +5,31 @@
 - [About](#about)
 - [Requirements](#requirements)
 - [Dependencies](#dependencies)
-- [Resources](#resources)
+- [Resources and Acknowledgments](#resources)
 
 ## About
 
+This is the 7th and final project of Udacity's front-end nanodegree. Students create a single page application from scratch using React, the Google Maps Api, and a third party API of their choice. This application features state parks of Texas with the best night time viewing conditions based on Bortle Scale light pollution ratings. It features images of each park utilizing the flickr API. The app also features details regaring the current visability conditions, courtesy of [Clear Dark Sky](#http://www.cleardarksky.com/).
+
 ## Requirements
+
+To view this application you may clone this repository and run npm install, or follow this [link](#link).
 
 ## Dependencies
 
-## Resources
+This app requires the following:
+
+- [bootstrap](#http://getbootstrap.com/)
+- [MDBbootstrap](#https://mdbootstrap.com/)
+- [MDBReact](#https://mdbootstrap.com/react/)
+- [Google Maps JS API](#https://developers.google.com/maps/documentation/javascript/tutorial)
+- [flickr API](#https://www.flickr.com/services/api/)
+
+## Resources and Acknoledgements
+
+Many thanks to [Yahya Elharony ](#https://www.youtube.com/watch?v=ywdxLNjhBYw&list=PLgOB68PvvmWCGNn8UMTpcfQEiITzxEEA1), who provided a clear and concise tutorial on how to use Google Maps in React without relying on an additional library.
+
+To complete this project I referred to the following:
+
+- [Google Maps API Documentation](##https://developers.google.com/maps/documentation/javascript/tutorial)
+- [MDBReact Documentation](#https://mdbootstrap.com/react/5-min-quick-start/)
