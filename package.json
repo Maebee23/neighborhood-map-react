@@ -2,9 +2,11 @@
   "name": "neighborhood-map-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maebee23.github.io/neighborhood-map-react/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
     "mdbootstrap": "^4.5.10",
     "mdbreact": "^4.7.1",
     "merge": "^1.2.1",
